@@ -1,0 +1,67 @@
+<html>
+<head>
+	<script src="jquery.js">
+	</script>
+	<script>
+		$(document).ready(function()
+		{
+			alert("hiiiiiii");
+			var count = -1;
+			$("#btn1").click(function()
+			{                          
+				var fruits = new Array('Peru','Mango','WaterMelon');
+				//for your understanding okk
+                alert("before incrementation:::"+count);
+                alert("before substarctrion:::"+fruits.length);
+
+                 alert("after substarctrion:::"+fruits.length-1);
+              
+				if(count==fruits.length-1)
+				{
+					count=-1;
+					alert('sorry it is full now');
+				}
+				else
+				{
+					count += 1;
+					alert("after incremantation::::"+count);
+					alert(fruits[count]);
+					$('#list1').append("<li>" + fruits[count] + "</li>");
+				}
+			})
+			$("#btn2").click(function()
+			{
+				var fruits = new Array('Peru','Mango','WaterMelon');
+				if(count==fruits.length-1)
+				{
+					count=-1;
+					alert('sorry it is full now');		
+				}
+				else
+				{
+					count += 1;
+					$('#list1').prepend("<li>" + fruits[count] + "</li>");
+				}
+			})
+			$("#btn3").click(function()
+			{
+				$('#list1').empty();
+			})
+		});
+	</script>
+</head>
+	
+<body>
+	<b style='color:blue'>Add Your Fav Fruits</b><br>
+	<ul id='list1'>
+		<li>Apple</li>
+		<li>Banana</li>
+		<li>Pineapple</li>
+	</ul>
+	<button id='btn1'>Append</button>
+	<button id='btn2'>Prepend</button>
+	<button id='btn3'>Empty List</button>
+
+</body>
+	
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>A Table</title>
+</head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+    // $(".sub").find('p').eq(0).show();
+    $("h3").click(function()
+    {
+        $(this).next("p").slideDown("fast").siblings("p:visible").slideUp("slow");
+    });
+}
+);
+</script>
+<style type="text/css">
+body
+{
+background-color: white;
+
+}
+.sub
+{
+    width: 480px;
+background-color: antiquewhite;
+margin: auto;
+border: 1em color red;
+text-align: center;
+color: blue;
+}
+.sub b
+{
+color: black;
+text-align: left;
+}
+.sub h3
+{
+	background:#c4c4c4;
+	padding: 5px 10px;
+	margin:0;
+	border:1px solid black;
+	border-bottom:none;
+	cursor:pointer;
+	color:Blue;
+}
+</style>
+<body>
+    <div class="sub">
+<H3>personal Details</H3>
+<p>
+    <b>Name::</b><i>saurav chikurdekar</i><br>
+    <b>Date of birth::</b><i>3/11/1999</i><br>
+    <b>Adress::</b><i>A/P ishwarpur</i><br>
+</p>
+<H3>Education details</H3>
+<p>
+    <b>10th::</b><i>83.20</i><br>
+    <b>12th::</b><i>64</i><br>
+    <b>B.tech::</b><i>67</i><br>
+</p>
+<H3>Contact details</H3>
+<p>
+    <b>mob no::</b><i>909090990</i><br>
+    <b>Gmail::</b><i>sauravchikurdekar@gmail.com</i><br>
+    <b>Website::</b><i>chikurdekarindustrials</i><br>
+</p>
+    </div>  
+    
+</body>
+</html>

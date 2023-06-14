@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Methods</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+
+	 
+	 $(document).ready(function(){
+		  
+		  $("#btn").click(function()
+		  {
+		  	var firstName=$("#name").val();
+		  	var lastName=$("#name2").val();
+		  	var email=$("#email").val();
+            if(firstName=="ratnesh")
+            {
+              alert("you are a valid user");
+            }
+            else
+            {
+              alert("You are not a valid user");
+            }
+
+            $("p").text("shukla");
+            // alert(text);
+
+		  })
+          
+
+
+		});	
+     
+
+	</script>
+</head>
+<body>
+<h1 style="text-align:center">Registration Form</h1>
+
+<div style="text-align:center">
+<form>
+	First Name:   <input type="text" name="name" id="name" placeholder="Enter your first name" value="" autofocus><br><br>
+    Last Name:    <input type="text" name="name2" id="name2" placeholder="Enter your last name"><br><br>
+    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id="email"><br>
+    <br>
+                  <input type="submit" name="btn" value="submit" id="btn" onclick="function();">
+
+
+
+
+</form>
+</div>
+<p>Do Register first</p>
+</body>
+</html>
